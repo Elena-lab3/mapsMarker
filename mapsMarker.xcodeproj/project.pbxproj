@@ -13,6 +13,8 @@
 		4FEB036C289C4BB90010A027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB036A289C4BB90010A027 /* Main.storyboard */; };
 		4FEB036E289C4BBB0010A027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB036D289C4BBB0010A027 /* Assets.xcassets */; };
 		4FEB0371289C4BBB0010A027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB036F289C4BBB0010A027 /* LaunchScreen.storyboard */; };
+		4FEB0379289C4E6D0010A027 /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB0378289C4E6D0010A027 /* marker.png */; };
+		E72E2D9D481488F4787C8631 /* Pods_mapsMarker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471821A1681977C3495F89 /* Pods_mapsMarker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		4FEB036D289C4BBB0010A027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FEB0370289C4BBB0010A027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FEB0372289C4BBB0010A027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEB0378289C4E6D0010A027 /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker.png; path = ../../../../Downloads/marker.png; sourceTree = "<group>"; };
+		5924C3EA86BD3948B62B566A /* Pods-mapsMarker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapsMarker.release.xcconfig"; path = "Target Support Files/Pods-mapsMarker/Pods-mapsMarker.release.xcconfig"; sourceTree = "<group>"; };
+		7D471821A1681977C3495F89 /* Pods_mapsMarker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapsMarker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE11E8C8D10DDB9083B1093 /* Pods-mapsMarker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapsMarker.debug.xcconfig"; path = "Target Support Files/Pods-mapsMarker/Pods-mapsMarker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72E2D9D481488F4787C8631 /* Pods_mapsMarker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A28D052B730CF3C49B4AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE11E8C8D10DDB9083B1093 /* Pods-mapsMarker.debug.xcconfig */,
+				5924C3EA86BD3948B62B566A /* Pods-mapsMarker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4FEB0358289C4BB90010A027 = {
 			isa = PBXGroup;
 			children = (
 				4FEB0363289C4BB90010A027 /* mapsMarker */,
 				4FEB0362289C4BB90010A027 /* Products */,
+				37A28D052B730CF3C49B4AF4 /* Pods */,
+				A14DC52CBE55744AACF1254F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +80,18 @@
 				4FEB036A289C4BB90010A027 /* Main.storyboard */,
 				4FEB036D289C4BBB0010A027 /* Assets.xcassets */,
 				4FEB036F289C4BBB0010A027 /* LaunchScreen.storyboard */,
+				4FEB0378289C4E6D0010A027 /* marker.png */,
 				4FEB0372289C4BBB0010A027 /* Info.plist */,
 			);
 			path = mapsMarker;
+			sourceTree = "<group>";
+		};
+		A14DC52CBE55744AACF1254F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D471821A1681977C3495F89 /* Pods_mapsMarker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FEB0375289C4BBB0010A027 /* Build configuration list for PBXNativeTarget "mapsMarker" */;
 			buildPhases = (
+				066E9C744FA6E3CC4D2FDB9C /* [CP] Check Pods Manifest.lock */,
 				4FEB035D289C4BB90010A027 /* Sources */,
 				4FEB035E289C4BB90010A027 /* Frameworks */,
 				4FEB035F289C4BB90010A027 /* Resources */,
+				B4677F732EDEDEF9643459E2 /* [CP] Embed Pods Frameworks */,
+				51BAE2D8CFD4E4676E9C9D70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,70 @@
 				4FEB0371289C4BBB0010A027 /* LaunchScreen.storyboard in Resources */,
 				4FEB036E289C4BBB0010A027 /* Assets.xcassets in Resources */,
 				4FEB036C289C4BB90010A027 /* Main.storyboard in Resources */,
+				4FEB0379289C4E6D0010A027 /* marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066E9C744FA6E3CC4D2FDB9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mapsMarker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51BAE2D8CFD4E4676E9C9D70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4677F732EDEDEF9643459E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapsMarker/Pods-mapsMarker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FEB035D289C4BB90010A027 /* Sources */ = {
@@ -282,6 +372,7 @@
 		};
 		4FEB0376289C4BBB0010A027 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE11E8C8D10DDB9083B1093 /* Pods-mapsMarker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +401,7 @@
 		};
 		4FEB0377289C4BBB0010A027 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5924C3EA86BD3948B62B566A /* Pods-mapsMarker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
